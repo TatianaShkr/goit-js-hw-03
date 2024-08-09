@@ -13,7 +13,7 @@ function makeArray(firstArray, secondArray, maxLength) {
   const togetherArray = firstArray.concat(secondArray); //2 масива разом
   const lengthArray = togetherArray.length;
   //console.log(lengthArray);
-  if (lengthArray < maxLength) {
+  if (lengthArray > maxLength) {
     togetherArray.slice(0, maxLength);
   }
   return togetherArray.slice(0, maxLength);

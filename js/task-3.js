@@ -14,7 +14,7 @@
 
 function filterArray(nambers, value) {
   let array = [];
-  for (let i = 0; i <= nambers.length; i++) {
+  for (let i = 0; i < nambers.length; i++) {
     if (nambers[i] > value) {
       array.push(nambers[i]);
     }
