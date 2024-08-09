@@ -12,11 +12,11 @@
 
 // Візьми код нижче і встав після оголошення своєї функції для перевірки коректності її роботи. У консоль будуть виведені результати її роботи.
 
-function filterArray(nambers, value) {
+function filterArray(numbers, value) {
   let array = [];
-  for (let i = 0; i < nambers.length; i++) {
-    if (nambers[i] > value) {
-      array.push(nambers[i]);
+  for (let i = 0; i < numbers.length; i++) {
+    if (numbers[i] > value) {
+      array.push(numbers[i]);
     }
   }
   return array;

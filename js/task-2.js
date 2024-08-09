@@ -14,9 +14,10 @@ function makeArray(firstArray, secondArray, maxLength) {
   const lengthArray = togetherArray.length;
   //console.log(lengthArray);
   if (lengthArray > maxLength) {
-    togetherArray.slice(0, maxLength);
+    return togetherArray.slice(0, maxLength);
+  } else {
+    return togetherArray;
   }
-  return togetherArray.slice(0, maxLength);
 }
 console.log(makeArray(['Mango', 'Poly'], ['Ajax', 'Chelsea'], 3)); // ["Mango", "Poly", "Ajax"]
 console.log(makeArray(['Mango', 'Poly', 'Houston'], ['Ajax', 'Chelsea'], 4)); // ["Mango", "Poly", "Houston", "Ajax"]
@@ -24,3 +25,5 @@ console.log(makeArray(['Mango'], ['Ajax', 'Chelsea', 'Poly', 'Houston'], 3)); //
 console.log(makeArray(['Earth', 'Jupiter'], ['Neptune', 'Uranus'], 2)); // ["Earth", "Jupiter"]
 console.log(makeArray(['Earth', 'Jupiter'], ['Neptune', 'Uranus'], 4)); // ["Earth", "Jupiter", "Neptune", "Uranus"]
 console.log(makeArray(['Earth', 'Jupiter'], ['Neptune', 'Uranus', 'Venus'], 0)); // []
+// пробний приклад 2х масивів, що меньше, ніж довжина
+console.log(makeArray(['Mango'], ['Poly'], 3));
